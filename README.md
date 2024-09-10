@@ -29,8 +29,15 @@ See following links for details:
 - DO Spaces using s3cmd: https://docs.digitalocean.com/products/spaces/reference/s3cmd-usage/
 - s3cmd usage: https://s3tools.org/usage
 
-## 2. Update variables in script
+## 2. Update variables in script and exclude file
 **NEXT**, update all the variables at the top of the script - it will not work if you do not update the values.
+
+**To exclude** files or folders from the sync, update the ```sync-local-exclude.txt``` file.
+
+- Enter each excluded file or folder one a separate line.
+- This backup script uses rsync to sync everything from the user's home folder - _you must exclude_ what you don't want backed up (like your Downloads folder).
+ 
+
 
 ## 3. Make script executable and run
 Make the file executable by:
