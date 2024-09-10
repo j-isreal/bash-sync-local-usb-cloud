@@ -34,8 +34,8 @@ See following links for details:
 
 **To exclude** files or folders from the sync, update the ```sync-local-exclude.txt``` file.
 
-- Enter each excluded file or folder one a separate line.
-- This backup script uses rsync to sync everything from the user's home folder - _you must exclude_ what you don't want backed up (like your Downloads folder).
+- Enter each excluded file or folder on a separate line.
+- This backup script uses rsync to sync everything from the user's home folder root - _you must exclude_ what you don't want backed up (like your Downloads folder).
  
 
 
