@@ -4,7 +4,7 @@ BASH script to sync local files to external USB-key AND off-site backup on cloud
 ## 1. Setup s3cmd and cloud storage space
 **FIRST**, either comment out the ```s3cmd``` lines, or setup s3cmd.
 
-s3cmd is available from the repositories.  You can use AWS (Amazon) or a compatible cloud storage service.
+s3cmd is available from the linux repositories.  You can use any AWS (Amazon)-compatible cloud storage service.
 
 I prefer DigitalOcean Spaces - it's only $5.00 a month for 250GB of storage.
 
@@ -12,7 +12,17 @@ Here's a $250 credit with them:
 
 [![DigitalOcean Referral Badge](https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg)](https://www.digitalocean.com/?refcode=7774aa9a2bfa&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
 
-### Ensure your s3cfg is configured and you can access the cloud storage
+### 1a. Ensure your s3cfg is configured and you can access the cloud storage
+You will need your API key and secret to configure s3cmd.
+
+Visit [DigitalOcean](https://docs.digitalocean.com/products/spaces/reference/s3cmd/) for complete instructions.
+
+
+Use the following to setup s3cmd:
+```
+s3cmd --configure
+```
+
 
 See following links for details:
 - DO Spaces: https://docs.digitalocean.com/products/spaces/
